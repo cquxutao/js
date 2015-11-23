@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+function changeAction()
+{
+	var x=document.getElementById("myForm");
+	alert("original action:"+x.action);
+	x.action="http://202.202.66.156";
+	alert("new action:"+x.action);
+	x.submit();
+}
+</script>
+</head>
+
+<body>
+<form id="myForm" action="http://www.baidu.com">
+<input type="text" value="xxx" size="100"; />
+<input type="button" value="yyyy" onclick="changeAction()"/>
+</form>
+</body>
+</html>

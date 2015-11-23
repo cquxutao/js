@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+function convertToUpperCase(){
+	document.getElementById("fname").value=document.getElementById("fname").value.toUpperCase();
+	document.getElementById("lname").value=document.getElementById("lname").value.toUpperCase();
+}
+	
+</script>
+
+</head>
+
+<body>
+<form name="form1">
+名：<input type="text" id="fname" size="20" /><br />
+姓：<input type="text" id="lname" size="20" />
+<br />
+转换为大写<input type="checkbox" id="toupper" onclick=" if(this.checked){
+convertToUpperCase()}"/>
+</body>
+</html>

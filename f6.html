@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+function favBrowser(){
+	document.getElementById("myList").accessKey="a";
+	document.getElementById("xingming").accessKey="b";
+	document.getElementById("xuehao").accessKey="c";
+	var mylist=document.getElementById("myList");
+	document.getElementById("favorite").value=mylist.options[mylist.selectedIndex].text;
+}
+
+</script>
+</head>
+
+<body onload="favBrowser()">
+<form>
+姓名：<input id="xingming" type="text" size="100">
+学号：<input id="xuehao" type="text" size="100">
+<select id="myList" onchange="favBrowser()">
+<option>IE</option>
+<option>SS</option>
+<option>YY</option>
+</select>
+<input type="text" id="favorite" size="100" />
+</form>
+</body>
+</html>
